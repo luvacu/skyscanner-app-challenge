@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Profile View Controller-->
+        <scene sceneID="mvO-Aa-daG">
+            <objects>
+                <viewController storyboardIdentifier="UserProfileViewController" id="6L3-GY-hRq" customClass="UserProfileViewController" customModule="Skscnnr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ayl-E9-8TP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="w2L-fj-93b">
+                                <rect key="frame" x="152.5" y="298.5" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="w2L-fj-93b" secondAttribute="height" multiplier="1:1" id="TCn-B6-ivr"/>
+                                    <constraint firstAttribute="height" constant="70" id="XLj-gE-Rp0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HO-ra-ErF">
+                                <rect key="frame" x="138" y="256" width="99" height="22"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w2L-fj-93b" firstAttribute="top" secondItem="7HO-ra-ErF" secondAttribute="bottom" constant="20.5" id="Czq-8D-WQ7"/>
+                            <constraint firstItem="w2L-fj-93b" firstAttribute="centerX" secondItem="ayl-E9-8TP" secondAttribute="centerX" id="Des-Z1-XDw"/>
+                            <constraint firstItem="7HO-ra-ErF" firstAttribute="centerX" secondItem="ayl-E9-8TP" secondAttribute="centerX" id="N4H-bU-EFi"/>
+                            <constraint firstItem="w2L-fj-93b" firstAttribute="centerY" secondItem="ayl-E9-8TP" secondAttribute="centerY" id="y3D-T3-f7F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="baY-8m-Gg2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="603-1r-cLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-102" y="179"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile" width="20" height="20"/>
+    </resources>
+</document>
